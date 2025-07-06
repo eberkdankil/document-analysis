@@ -180,8 +180,8 @@ EMAIL_TO=destinatario@dominio.com
 
 1. Clone o repositório:
    ```bash
-   git clone <url-do-repositorio>
-   cd "Teste Estudo de caso"
+   git clone https://github.com/eberkdankil/document-analysis.git
+   cd "document-analysis"
    ```
 2. Crie e ative o ambiente virtual:
    ```bash
