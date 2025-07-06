@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFECAF - Processamento de Documentos</title>
+    
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/logo_branco.png" alt="UniFECAF" class="logo-img">
+                </div>
+                <p class="subtitle">Processamento Inteligente de Documentos</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="upload-header">
+                    <h2><i class="fas fa-upload"></i> Upload de Documentos</h2>
+                    <p>Faça upload dos documentos necessários para processamento</p>
+                </div>
+
+                <form id="uploadForm" class="upload-form">
+                    <!-- RG Frente -->
+                    <div class="upload-card">
+                        <div class="upload-card-header">
+                            <i class="fas fa-id-card"></i>
+                            <h3>RG - Frente</h3>
+                            <span class="required">*</span>
+                        </div>
+                        <div class="upload-area" data-type="rg_frente">
+                            <div class="upload-content">
+                                <i class="fas fa-camera"></i>
+                                <p>Clique ou arraste a imagem da frente do RG</p>
+                                <span class="file-info">Formatos: JPG, PNG (máx. 5MB)</span>
+                            </div>
+                            <input type="file" id="rg_frente" name="rg_frente" accept="image/*" required>
+                            <div class="preview-area" id="preview_rg_frente"></div>
+                        </div>
+                        <div class="upload-status" id="status_rg_frente"></div>
+                    </div>
+
+                    <!-- RG Verso -->
+                    <div class="upload-card">
+                        <div class="upload-card-header">
+                            <i class="fas fa-id-card"></i>
+                            <h3>RG - Verso</h3>
+                            <span class="required">*</span>
+                        </div>
+                        <div class="upload-area" data-type="rg_verso">
+                            <div class="upload-content">
+                                <i class="fas fa-camera"></i>
+                                <p>Clique ou arraste a imagem do verso do RG</p>
+                                <span class="file-info">Formatos: JPG, PNG (máx. 5MB)</span>
+                            </div>
+                            <input type="file" id="rg_verso" name="rg_verso" accept="image/*" required>
+                            <div class="preview-area" id="preview_rg_verso"></div>
+                        </div>
+                        <div class="upload-status" id="status_rg_verso"></div>
+                    </div>
+
+                    <!-- Comprovante de Residência -->
+                    <div class="upload-card">
+                        <div class="upload-card-header">
+                            <i class="fas fa-home"></i>
+                            <h3>Comprovante de Residência</h3>
+                            <span class="required">*</span>
+                        </div>
+                        <div class="upload-area" data-type="comprovante">
+                            <div class="upload-content">
+                                <i class="fas fa-camera"></i>
+                                <p>Clique ou arraste a foto do comprovante de residência</p>
+                                <span class="file-info">Formatos: JPG, PNG (máx. 5MB)</span>
+                            </div>
+                            <input type="file" id="comprovante" name="comprovante" accept="image/*" required>
+                            <div class="preview-area" id="preview_comprovante"></div>
+                        </div>
+                        <div class="upload-status" id="status_comprovante"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="submit-section">
+                        <button type="submit" id="submitBtn" class="submit-btn" disabled>
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Processar Documentos</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h2><i class="fas fa-check-circle"></i> Resultados do Processamento</h2>
+                </div>
+                <div class="results-content" id="resultsContent">
+                    <!-- Results will be populated here -->
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-content">
+                    <div class="spinner"></div>
+                    <h3>Processando documentos...</h3>
+                    <p>Isso pode levar alguns segundos</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 UniFECAF. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

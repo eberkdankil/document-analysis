@@ -1,0 +1,21 @@
+# Flask e extensões
+Flask==2.3.3
+flask-cors==4.0.0
+python-dotenv==1.0.0
+
+# Supabase
+supabase==2.0.0
+
+# OpenAI (inclui Vision API)
+openai==1.3.0
+
+# Utilitários
+python-multipart==0.0.6
+requests==2.31.0
+
+# Logging e debug
+colorlog==6.7.0
+
+# Testes
+pytest==7.4.0
+pytest-flask==1.2.0 

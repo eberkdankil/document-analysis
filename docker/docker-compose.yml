@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: unifecaf-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ../backend/.env
+    restart: unless-stopped
+    working_dir: /app
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+    container_name: unifecaf-frontend
+    ports:
+      - "5001:5001"
+    working_dir: /frontend
+    restart: unless-stopped 
