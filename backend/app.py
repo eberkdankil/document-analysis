@@ -76,7 +76,6 @@ if __name__ == '__main__':
     print("🚀 Iniciando servidor...")
     print("📱 Acesse: http://localhost:5000")
     print("🔍 Health check: http://localhost:5000/health")
-    print("🧪 Teste API: http://localhost:5000/api/test")
     print("=" * 50)
     
     # Executa a aplicação
