@@ -1,6 +1,6 @@
 # 🎓 Onboarding Inteligente de Documentos UniFECAF
 
-Sistema completo para processamento inteligente de documentos (RG e Comprovante de Residência) usando OpenAI Vision, Supabase, e-mail e frontend responsivo.
+Sistema completo para processamento inteligente de documentos (RG e Comprovante de Residência) usando OpenAI, Supabase, e-mail e frontend responsivo.
 
 ---
 
