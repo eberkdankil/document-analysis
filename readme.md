@@ -1,6 +1,6 @@
 # 🎓 Onboarding Inteligente de Documentos UniFECAF
 
-Sistema completo para processamento inteligente de documentos (RG e Comprovante de Residência) usando OpenAI Vision, Supabase, e-mail e frontend responsivo.
+Sistema completo para processamento inteligente de documentos (RG e Comprovante de Residência) usando OpenAI, Supabase, e-mail e frontend responsivo.
 
 ---
 
@@ -180,8 +180,8 @@ EMAIL_TO=destinatario@dominio.com
 
 1. Clone o repositório:
    ```bash
-   git clone <url-do-repositorio>
-   cd "Teste Estudo de caso"
+   git clone https://github.com/eberkdankil/document-analysis.git
+   cd "document-analysis"
    ```
 2. Crie e ative o ambiente virtual:
    ```bash
